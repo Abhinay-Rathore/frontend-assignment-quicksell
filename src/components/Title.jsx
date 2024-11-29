@@ -24,8 +24,14 @@ class Title extends Component {
                             <div className='card-user-icon'>{title.split(" ").map((n) => n[0].toUpperCase()).join("")}</div>
                             <div className={available ? 'active-user' : 'inactive-user'}></div>
                         </div>
-                        : grouping === 'status' ? <img src={'/icons/status/' + title + '.svg'} /> 
-                        : grouping === 'priority' ? <img src={'/icons/priority/' + priorityCode[title] + '.svg'} /> 
+                        : grouping === 'status' ? <img 
+                        src={'/icons/status/' + title + '.svg'} 
+                        alt={`Status icon for ${title}`} 
+                      /> 
+                        : grouping === 'priority' ? <img 
+                        src={'/icons/priority/' + priorityCode[title] + '.svg'} 
+                        alt={`Priority icon for ${priorityCode[title]}`} 
+                      />
                         : null}
                     <span className='group-title'>{title}</span>
                     <span className='group-count'>{count}</span>
