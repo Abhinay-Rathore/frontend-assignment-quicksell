@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import Tag from './Tag';
-import getImageSrc from './getImageSrc';
 import './styles/Card.css';
 
-const doneIcon = '/icons/status/Todo.svg';
-const ellipsisIcon = '/icons/ellipsis.svg';
+
 
 class Card extends Component {
   render() {
